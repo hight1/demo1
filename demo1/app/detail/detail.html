@@ -1,0 +1,41 @@
+<div ng-include=" 'components/header.html' "></div>
+<div id="first" class="container">
+<div class="row">
+ <div class="col-sm-12">
+  
+  <ol class="breadcrumb">
+   <li href="#">首页<span class="navbar-text"></span></li>
+   <li href="#" class="active">详情</li>
+   
+  </ol>
+   </div>
+</div>
+<div class="row">
+ <div class="col-sm-12">
+  
+ <div class="panel panel-default">
+  <div class="panel-heading"> 
+    <h1>{{dishList.name}}</h1>
+  </div>
+  <div class="panel-body">
+    
+	  <img class="img-responsive" src="img/{{dishList.img_lg}}">
+<div class="well well-sm">
+<p><strong>主要食料：</strong>{{dishList.material}}</p>
+
+<p>{{dishList.detail}}</p>
+<h4 class="text-danger"></h4>
+</div>
+   </div>
+  <div class="panel-footer" id="foot">
+    <div id="button">
+    <button ng-click="jumpOrder1(dishList.did)" class="btn btn-success">我要订餐</button>
+	<button ng-click="jumpMain()" class="btn btn-warning">我要看看</button>
+	</div>
+  </div>
+</div>
+ </div>
+</div>
+</div>
+
+<div ng-include=" 'components/footer.html' "></div>

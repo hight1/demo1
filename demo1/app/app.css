@@ -1,0 +1,47 @@
+.container#first{
+  
+ margin-top:67px;
+ margin-bottom:67px;
+  
+  
+}
+
+
+
+.nav#header ul li{
+ float:left;
+ width:33.3%;
+ list-style:none;
+ 
+
+
+}
+
+.panel-footer #button{
+
+float:right;
+}
+.panel-footer#foot {
+
+position:relative;
+height:50px;
+}
+
+#waiting{
+display:inline-block;
+width:30px;
+height:30px;
+}
+
+.container#myorder{
+margin-top:67px;
+ margin-bottom:67px;
+}
+.container#order{
+margin-top:67px;
+ margin-bottom:67px;
+}
+.container#atti{
+margin-top:67px;
+ margin-bottom:67px;
+}

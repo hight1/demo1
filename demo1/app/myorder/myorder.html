@@ -1,0 +1,36 @@
+<div ng-include=" 'components/header.html' "></div>
+
+<div id="myorder" class="container">
+<div class="row">
+ <div class="col-sm-12">
+   <div class="panel panel-default">
+  
+  <div class="panel-heading"><center>我的订单</center></div>
+  
+
+ 
+  <table class="table table-striped">
+    <thead class="text-center">
+	 <tr>
+	  <th>编号</th>
+	  <th>菜品</th>
+	  <th>下单时间</th>
+	  <th>联系人</th>
+	 </tr>
+	</thead>
+	<tbody>
+	  <tr ng-repeat="info in dishList">
+        <th>{{count}}</th>
+        <td><img class="img-responsive" src="img/{{info.img_sm}}"/></td>
+        <td>{{info.order_time}}</td>
+        <td>{{info.user_name}}</td>
+        </tr>
+	</tbody>
+  </table>
+</div>
+ 
+ </div>
+</div>
+</div>
+
+<div ng-include=" 'components/footer.html' "></div>
